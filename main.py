@@ -15,7 +15,7 @@ monroCropedBlue = Image.blend(monro_blue_right, monro_blue_m, 0.5)
 
 monro_green_m = green.crop((50, 0, 462, 512))
 
-new_monro = Image.merge("RGB", (monroCropedRed, monroCropedBlue, monro_green_m))
+new_monro = Image.merge("RGB", (monroCropedRed, monro_green_m, monroCropedBlue))
 new_monro.save("newmonro.jpg")
 
 new_monro.thumbnail((80,80))
